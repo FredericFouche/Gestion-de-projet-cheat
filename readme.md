@@ -1,5 +1,3 @@
-# Gestion de Projet
-
 L'objectif de ce document est de vous donner les bases pour gérer un projet de développement de logiciel. Il ne s'agit pas d'un document exhaustif, mais d'un ensemble de notions et de bonnes pratiques basiques qui vous permettront de gérer un projet de manière efficace.
 
 ## Sommaire
