@@ -42,3 +42,14 @@ Définitions des roles :
 | Administrateur | Crééer un quizz            | Créer un quizz                                |
 | Administrateur | Modifier un quizz          | Modifier les réponses/questions du quizz      |
 | Administrateur | Supprimer un quizz         | Supprimer un quizz                            |
+
+MCD :
+
+Les entités et leurs attributs :
+
+- Utilisateur: nom, prénom, email, mot de passe
+- Quizz: titre, description
+- Questions: description, wiki, anecdote
+- Niveau: nom
+- Thème: nom
+- Propositions de réponse: description

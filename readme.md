@@ -155,7 +155,7 @@ GitHub propose un outil de gestion de projet basé sur le Kanban Board. Il perme
 
 Il est important de considérer que les tâches dans le kanban board doivent être suffisamment petites pour être réalisées en une journée. Si une tâche est trop grande, elle doit être découpée en plusieurs tâches plus petites. Cela permet de suivre l'avancement du projet et de s'adapter aux changements. C'est l'un des principes de la méthode Agile.
 
-Github intègre également un outil de gestion de projet basé sur le Kanban Board, on peut y créer des projets, des colonnes et des cartes, des labels et des filtres.
+Github intègre également un outil de gestion de projet basé sur le Kanban Board, on peut y créer des projets, des colonnes et des cartes, des labels et des filtres. On peut convertir les tâches en issues github, nous permettant de nous en servir comme des spécifications en rappelant le cahiier des charges.
 
 ### 5.2. Les User Stories Expliquées Simplement
 
@@ -200,6 +200,8 @@ La formule générale est : "En tant que [type d'utilisateur], je veils pouvoir 
 L'objectif est de présenter clairement ces concepts pour les débutants en développement logiciel.
 
 ### 5.3. Poker Planning
+
+Le Poker Planning est une technique de planification qui permet de déterminer le temps nécessaire pour réaliser une tâche. Par exemple, le temps nécessaire pour développer une fonctionnalité V1 d'un logiciel avec une estimation de 1 à 3 jours.
 
 ### 5.4. Wireframes et Mockups
 
