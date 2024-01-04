@@ -45,7 +45,7 @@ Définitions des roles :
 
 MCD :
 
-Les entités et leurs attributs :
+### 1. Les entités et leurs attributs :
 
 - Utilisateur: nom, prénom, email, mot de passe
 - Quizz: titre, description
@@ -53,3 +53,24 @@ Les entités et leurs attributs :
 - Niveau: nom
 - Thème: nom
 - Propositions de réponse: description
+
+### 2. Schématisation du MCD en drawio
+
+### 3. Souligner le discriminant
+
+Le discriminant est un attribut qui permet de différencier les entités de manière unique.
+
+exemple :
+
+- on ne peut pas avoir 2 utilisateurs avec le même email
+  => email est un discriminant
+
+### 4. Les associations
+
+Les associations sont des liens entre les entités.
+Note : Les associations seront stockées en base, soit par une clé étrangère, soit par une table de jointure.
+
+Pour les niveaux, les cardinalités pourraient être :
+
+- `0, N` : un niveau peut caractériser 0 questions. Exemple : un Administrateur crééer un niveau mais ne l'a pas encore assigné à une question.
+- `1, N` : un niveau caractérise au moins une question. Exemple : un Administrateur crééer un niveau et l'assigne à une question. L'implication est que l'interface nous oblige à assigner un niveau à une question.
