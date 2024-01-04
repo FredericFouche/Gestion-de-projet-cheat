@@ -33,6 +33,11 @@ En gestion de projet, un projet se définit par un ensemble d'activités **coord
 
 Le projet est une entreprise complexe et structurée.
 
+### 1.2 Clarifier les besoins et les attentes du client
+
+Avant de commencer un projet, il est important de clarifier les besoins et les attentes du client. Cela permet de s'assurer que le projet répondra aux besoins du client et que le client sera satisfait du résultat. Pour ça, il existe des outils comme les User Stories, les outils de gestion de projet Agile, etc.
+Il est important d'éclaircir même les choses les plus basiques comme le titre du produit ou du service, les fonctionnalités, les technologies, etc.
+
 ## 2. Le Cahier des Charges
 
 Le cahier des charges est un document qui décrit les besoins et les attentes du client. Il est rédigé par le client et doit être validé par le client et le prestataire. Il doit être le plus précis possible et doit être rédigé en collaboration avec le prestataire.
@@ -150,34 +155,53 @@ GitHub propose un outil de gestion de projet basé sur le Kanban Board. Il perme
 
 Il est important de considérer que les tâches dans le kanban board doivent être suffisamment petites pour être réalisées en une journée. Si une tâche est trop grande, elle doit être découpée en plusieurs tâches plus petites. Cela permet de suivre l'avancement du projet et de s'adapter aux changements. C'est l'un des principes de la méthode Agile.
 
-### 5.2. Les User Stories
+### 5.2. Les User Stories Expliquées Simplement
 
-Une User Story est une description simple et concise d'une fonctionnalité du logiciel. Elle est rédigée du point de vue de l'utilisateur et décrit ce que l'utilisateur veut faire avec le logiciel. Elle est rédigée en collaboration avec le client et le prestataire.
+Une User Story est un moyen simple et clair de décrire une fonctionnalité d'un logiciel du point de vue de l'utilisateur. C'est une courte histoire qui explique ce que l'utilisateur souhaite accomplir en utilisant le logiciel. Elle est créée en collaboration entre le client (qui a besoin du logiciel) et le prestataire (qui développe le logiciel). Ces histoires aident à imaginer comment le logiciel sera utilisé dans la pratique.
 
-Une User Story est composée de 3 éléments :
+Il est important de définir les rôles des utilisateurs. Cela permet de définir les fonctionnalités du logiciel et de s'assurer que le logiciel répondra aux besoins des utilisateurs.
 
-- **La description** : Elle décrit ce que l'utilisateur veut faire avec le logiciel.
+**Chaque User Story comprend trois parties principales :**
 
-- **Les critères d'acceptation** : Ils décrivent les conditions qui doivent être remplies pour que la User Story soit considérée comme terminée.
+**La Description** : C'est le cœur de la User Story. Elle explique en quelques mots ce que l'utilisateur veut faire avec le logiciel. Par exemple, "Je veux pouvoir me connecter à mon compte".
 
-- **La valeur métier** : Elle décrit la valeur ajoutée pour l'utilisateur.
+**Les Critères d'Acceptation** : Ce sont les conditions qui doivent être remplies pour que la User Story soit considérée comme complète. Ils définissent ce qui est nécessaire pour que la fonctionnalité soit opérationnelle. Par exemple, "Je dois pouvoir saisir mon adresse email et mon mot de passe".
 
-Par exemple :
+**La Valeur Métier** : Elle montre l'utilité ou l'avantage que cette fonctionnalité apporte à l'utilisateur. Par exemple, "Cela me permet d'accéder à mon profil".
 
-```
-En tant qu'utilisateur, je veux pouvoir me connecter à mon compte pour accéder à mon profil.
+Pour rendre cela plus concret, voici un exemple :
 
-Critères d'acceptation :
-- Je dois pouvoir saisir mon adresse email et mon mot de passe.
+    En tant qu'utilisateur, je veux pouvoir me connecter à mon compte afin d'accéder à mon profil.
 
-Valeur métier :
-- Je peux accéder à mon profil.
-```
+    Critères d'acceptation :
 
-Ce qui nous donne :
+    - Je peux entrer mon adresse email et mon mot de passe pour me connecter.
 
-| En tant que | Je veux pouvoir...        | Afin de...           |
-| ----------- | ------------------------- | -------------------- |
-| Utilisateur | me connecter à mon compte | accéder à mon profil |
+    Valeur métier :
+
+    - J'accède facilement à mon profil et à mes informations personnelles.
+
+Cela se traduit en un tableau simple :
+
+| En tant que | Je veux pouvoir... | Afin de...           |
+| ----------- | ------------------ | -------------------- |
+| Utilisateur | me connecter       | accéder à mon profil |
+
+Et en anglais :
+
+| As a | I want to... | So that...             |
+| ---- | ------------ | ---------------------- |
+| User | log in       | access my profile page |
+
+La formule générale est : "En tant que [type d'utilisateur], je veils pouvoir [action] afin de [bénéfice]".
+
+L'objectif est de présenter clairement ces concepts pour les débutants en développement logiciel.
+
+### 5.3. Poker Planning
+
+### 5.4. Wireframes et Mockups
+
+Le Wireframe est un schéma qui permet de visualiser l'interface du logiciel, il est fonctionnel. Ce n'est pas le design final, on parlera plutot de maquette ou de mockup dans ce cadre là.
+Les wireframes sont souvent très rudimentaires, ils permettent de visualiser l'interface du logiciel et de s'assurer que le logiciel répondra aux besoins des utilisateurs avant de commencer le développement.
 
 ### Notes
