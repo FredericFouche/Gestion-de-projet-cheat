@@ -155,6 +155,8 @@ GitHub propose un outil de gestion de projet basé sur le Kanban Board. Il perme
 
 Il est important de considérer que les tâches dans le kanban board doivent être suffisamment petites pour être réalisées en une journée. Si une tâche est trop grande, elle doit être découpée en plusieurs tâches plus petites. Cela permet de suivre l'avancement du projet et de s'adapter aux changements. C'est l'un des principes de la méthode Agile.
 
+Github intègre également un outil de gestion de projet basé sur le Kanban Board, on peut y créer des projets, des colonnes et des cartes, des labels et des filtres.
+
 ### 5.2. Les User Stories Expliquées Simplement
 
 Une User Story est un moyen simple et clair de décrire une fonctionnalité d'un logiciel du point de vue de l'utilisateur. C'est une courte histoire qui explique ce que l'utilisateur souhaite accomplir en utilisant le logiciel. Elle est créée en collaboration entre le client (qui a besoin du logiciel) et le prestataire (qui développe le logiciel). Ces histoires aident à imaginer comment le logiciel sera utilisé dans la pratique.
