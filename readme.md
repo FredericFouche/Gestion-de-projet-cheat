@@ -204,4 +204,6 @@ L'objectif est de présenter clairement ces concepts pour les débutants en dév
 Le Wireframe est un schéma qui permet de visualiser l'interface du logiciel, il est fonctionnel. Ce n'est pas le design final, on parlera plutot de maquette ou de mockup dans ce cadre là.
 Les wireframes sont souvent très rudimentaires, ils permettent de visualiser l'interface du logiciel et de s'assurer que le logiciel répondra aux besoins des utilisateurs avant de commencer le développement.
 
+Il est envisageable de faire plusieurs Wireframes, par exemple un pour la version mobile et un pour la version desktop.
+
 ### Notes
