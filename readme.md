@@ -14,6 +14,9 @@ L'objectif de ce document est de vous donner les bases pour gérer un projet de 
 - [5. Les outils de gestion de projet Agile](#5-les-outils-de-gestion-de-projet-agile)
   - [5.1. Les Kanban Boards](#51-les-kanban-boards)
   - [5.2. Les User Stories](#52-les-user-stories)
+  - [5.3. Poker Planning](#53-poker-planning)
+  - [5.4. Wireframes et Mockups](#54-wireframes-et-mockups)
+- [6. Les tests unitaires](#6-les-tests-unitaires)
 - [Notes](#notes)
 
 ## 1. Introduction générale et notion de base
@@ -209,5 +212,61 @@ Le Wireframe est un schéma qui permet de visualiser l'interface du logiciel, il
 Les wireframes sont souvent très rudimentaires, ils permettent de visualiser l'interface du logiciel et de s'assurer que le logiciel répondra aux besoins des utilisateurs avant de commencer le développement.
 
 Il est envisageable de faire plusieurs Wireframes, par exemple un pour la version mobile et un pour la version desktop.
+
+## 6. Les tests
+
+Les tests unitaires sont des tests qui permettent de vérifier le bon fonctionnement d'une fonction ou d'une classe. Ils permettent de s'assurer que le code fonctionne comme prévu et qu'il ne contient pas de bugs. Il est important de tester le code avant de le déployer en production.
+
+Dans le développement, il existe un type de gestion de projet qui se veut test driven, c'est à dire que l'on écrit les tests avant d'écrire le code. Cela permet de s'assurer que le code fonctionne comme prévu et qu'il ne contient pas de bugs. Dans un cadre plus général, l'objectif d'un test est d'éviter les régressions, c'est à dire de s'assurer que le code fonctionne comme prévu et qu'il ne contient pas de bugs.
+
+### 6.1. Les définitions
+
+- **Les régressions** : Une régression est un bug qui apparaît après une modification du code. Elle peut être causée par une modification du code ou par une modification de l'environnement.
+- **Test Driven Development (TDD)** : Le Test Driven Development est une méthode de développement qui consiste à écrire les tests avant d'écrire le code. Cela permet de s'assurer que le code fonctionne comme prévu et qu'il ne contient pas de bugs.
+- **Les tests automatisés** : Les tests automatisés sont des tests qui sont exécutés automatiquement. Ils permettent de s'assurer que le code fonctionne comme prévu et qu'il ne contient pas de bugs.
+
+### 6.2. Les tests automatisés
+
+Il existe plusieurs types de tests automatisés :
+
+- les tests unitaires :
+  - principalement pour tester des bouts de code "atomique", comme une fonction ou une classe en isolation.
+  - exemple : tester la fonction utilitaire `add` qui additionne deux nombres.
+- les tests fonctionnels :
+  - principalement pour tester des fonctionnalités complètes, comme un formulaire de connexion. L'objectif est de tester la logique business de l'application.
+  - exemple : tester le formulaire de connexion, en vérifiant que l'utilisateur peut se connecter avec un email et un mot de passe valides.
+- les tests end-to-end :
+  - tests fonctionnels mais de bout en bout : on teste également l'interface graphique et/ou les calls à la bdd.
+
+Parfois, les lexiques se confondent, et on parle de tests unitaires pour désigner les tests fonctionnels, ou de tests fonctionnels pour désigner les tests unitaires.
+
+Le problème en entreprise (souvent les startups) estiment qu'il faut se concentrer sur l'implémentation car les tests sont chronophages, mais c'est une erreur car les tests permettent de gagner du temps sur le long terme. C'est un investissement qui permet de gagner du temps dans le cas de réécriture de code, de debug, de maintenance en général.
+
+### 6.3. Les outils de tests
+
+On a besoin de 2 choses pour les mettre en place : `test runner` et une `librairie d'assertions`.
+
+Les test runner :
+
+- `Jest`
+- `Mocha`
+- `Vitest`
+- `node:test`(Node possède un test runner intégré depuis la version Node 20)
+
+C'est l'équivalent de lancer node sur un fichier, mais avec des options supplémentaires pour gérer les tests.
+
+Les librairies d'assertions :
+
+- `Chai`
+- `Jest` possède une librairie d'assertions intégrée
+- `node:assert` (Node possède une librairie d'assertions intégrée)
+- `Vitest` possède une librairie d'assertions intégrée
+
+Les extensions de fichier de tests :
+
+- `.test.js`
+- `.spec.js`
+- `.unit.js`
+- `.e2e.js`
 
 ### Notes
