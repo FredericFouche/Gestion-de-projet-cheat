@@ -229,14 +229,15 @@ Dans le développement, il existe un type de gestion de projet qui se veut test 
 
 Il existe plusieurs types de tests automatisés :
 
-- les tests unitaires :
+- les **tests unitaires** :
   - principalement pour tester des bouts de code "atomique", comme une fonction ou une classe en isolation.
-  - exemple : tester la fonction utilitaire `add` qui additionne deux nombres.
-- les tests fonctionnels :
+    - exemple : tester la fonction utilitaire `add` qui additionne deux nombres.
+- les **tests fonctionnels ou d'intégration** :
   - principalement pour tester des fonctionnalités complètes, comme un formulaire de connexion. L'objectif est de tester la logique business de l'application.
-  - exemple : tester le formulaire de connexion, en vérifiant que l'utilisateur peut se connecter avec un email et un mot de passe valides.
-- les tests end-to-end :
+    - exemple : tester le formulaire de connexion, en vérifiant que l'utilisateur peut se connecter avec un email et un mot de passe valides.
+- les **tests end-to-end** :
   - tests fonctionnels mais de bout en bout : on teste également l'interface graphique et/ou les calls à la bdd.
+    - exemple : tester le formulaire de connexion, en vérifiant que l'utilisateur peut se connecter avec un email et un mot de passe valides, et que l'utilisateur est redirigé vers la page d'accueil. on test l'intégralité de la fonctionnalité.
 
 Parfois, les lexiques se confondent, et on parle de tests unitaires pour désigner les tests fonctionnels, ou de tests fonctionnels pour désigner les tests unitaires.
 
@@ -268,5 +269,81 @@ Les extensions de fichier de tests :
 - `.spec.js`
 - `.unit.js`
 - `.e2e.js`
+
+### 6.4. La structure des tests
+
+les blocs de tests :
+
+- `describe` : permet de décrire un bloc de tests (un fichier, une fonction, une classe, etc.).
+  - exemple :
+
+```js
+describe('add', () => {
+  // tests
+});
+```
+
+- `it` : le test qui sera exécuté.
+  - exemple :
+
+```js
+describe('add', () => {
+  it('should add two numbers', () => {
+    // test
+  });
+});
+```
+
+- `beforeEach` : permet d'exécuter du code avant chaque test.
+  - exemple :
+
+```js
+describe('add', () => {
+  beforeEach(() => {
+    // code exécuté avant chaque test
+  });
+
+  it('should add two numbers', () => {
+    // test
+  });
+});
+```
+
+- `afterEach` : permet d'exécuter du code après chaque test.
+  - exemple :
+
+```js
+describe('add', () => {
+  afterEach(() => {
+    // code exécuté après chaque test
+  });
+
+  it('should add two numbers', () => {
+    // test
+  });
+});
+```
+
+Généralement un test est en 3 parties :
+
+- `Arrange` : préparer les données nécessaires pour le test.
+- `Act` : exécuter le code à tester.
+- `Assert` : vérifier que le résultat est celui attendu.
+
+```js
+describe('add', () => {
+  it('should add two numbers', () => {
+    // Arrange
+    const a = 1;
+    const b = 2;
+
+    // Act
+    const result = add(a, b);
+
+    // Assert
+    expect(result).toBe(3);
+  });
+});
+```
 
 ### Notes
